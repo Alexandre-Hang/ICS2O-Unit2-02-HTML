@@ -9,10 +9,39 @@
     <title>Swaping an image with javascript</title>
   </head>
   <body>
-    <button onclick="document.getElementById('myImage').src='./images/changing image 1.PNG'">Switch score</button>
-    <img id="myImage" src="./images/changing image 2.PNG" style="width:500px">
-    <button onclick="document.getElementById('myImage').src='./images/changing image 2.PNG'">Switch back score</button>
-    <p id="text">This is a text that will change</p>
-    
+    <button onclick="document.getElementById('myimage').src='./images/changing image 1.PNG'">Switch score</button>
+    <img id="myimage" src="./images/changing image 2.PNG" style="width:500px">
+    <button onclick="document.getElementById('myimage').src='./images/changing image 2.PNG'">Switch back score</button>
+    <p><button onclick="myfunction()">Click here to change text</button></p>
+    <div id="text">This text will change</div>
+    <script>
+    function myfunction() {
+    var x = document.getElementById("text");
+    if (x.innerHTML === "This text will change") {
+    x.innerHTML = "The text has been changed";
+    } else {
+    x.innerHTML = "This text will change";
+    }
+    }
+    </script>
+    <p id="hidden">This text will disapear</p>
+    <button onclick="hide()">Click here to make text disapear</button>
+    <button onclick="appear()">Click here to make text disapear</button>
+    <script>
+      function hide() {
+        document.getElementById("hidden").style.display="none"
+      }
+    </script>
+    <script>
+      function appear() {
+        document.getElementById("hidden").style.display="block"
+      }
+    </script>
+    <button type="button" onclick="myFunction()">Set background color</button>
+    <script>
+      function myFunction() {
+        document.body.style.backgroundColor = "lightblue";
+      }
+    </script>
   </body>
 </html>
