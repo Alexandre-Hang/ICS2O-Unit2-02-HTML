@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Learning to use a button">
+    <meta name="keywords" content="javascript, button">
+    <meta name="author" content="Alexandre Hang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning more with buttons</title>
+  </head>
+  <body>
+    <div id="text">This text will change font, size, and color</div>
+    <p><button onclick="myfunction()">Click here to change font</button></p>
+    <script>
+      function myfunction() {
+        document.body.style.fontFamily = "courier";
+        document.body.style.fontSize = "50px";
+        document.body.style.color = "blue";
+      }
+    </script>
+  </body>
+</html>
